@@ -3,6 +3,7 @@ import Header from "./Header"
 import './App.css';
 import SideBar from "./Sidebar"
 import Feed from "./Feed"
+import Widgets from "./Widgets"
 
 function App() {
   return (
@@ -11,11 +12,14 @@ function App() {
 
       <Header />
       <div className="app_body">
+
+        <div id="fb-root"></div>
+
         <SideBar />
         <Feed />
+        <Widgets />
 
-        {/* Feed */}
-        {/* Widgets */}
+
       </div>
 
     </div>
