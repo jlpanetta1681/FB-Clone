@@ -1,27 +1,30 @@
-import React from "react"
-import Header from "./Header"
+
+import React from 'react';
 import './App.css';
-import SideBar from "./Sidebar"
-import Feed from "./Feed"
-import Widgets from "./Widgets"
+import Feed from './components/Feed/Feed';
+import Header from './components/Header/Header';
+import Login from './components/Login/Login';
+import Sidebar from './components/Sidebar/Sidebar';
+import Widgets from './components/Widgets/Widgets';
+import { useStateValue } from './StateProvider';
 
 function App() {
+  const [{ user }, dispatch] = useStateValue();
+
   return (
-    // BEM naming convention
     <div className="app">
-
-      <Header />
-      <div className="app_body">
-
-        <div id="fb-root"></div>
-
-        <SideBar />
-        <Feed />
-        <Widgets />
-
-
-      </div>
-
+      {!user ? (
+        <Login />
+      ) : (
+          <>
+            <Header />
+            <div className="app__body">
+              <Sidebar />
+              <Feed />
+              <Widgets />
+            </div>
+          </>
+        )}
     </div>
   );
 }
