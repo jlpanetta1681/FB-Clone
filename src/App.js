@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './App.css';
 import Feed from './components/Feed/Feed';
@@ -7,6 +6,7 @@ import Login from './components/Login/Login';
 import Sidebar from './components/Sidebar/Sidebar';
 import Widgets from './components/Widgets/Widgets';
 import { useStateValue } from './StateProvider';
+
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
