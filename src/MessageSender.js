@@ -4,19 +4,21 @@ import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
 import VideocamIcon from "@material-ui/icons/Videocam";
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 import "./MessageSender.css";
+import Widgets from './Widgets'
 
 function MessageSender() {
   const [input, setInput] = useState("");
   const [imageUrl, setImageUrl] = useState("")
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
+    setInput = ("");
+    setImageUrl = ("")
   };
   return (
     <div className="messageSender">
       <div className="messageSender_top">
         <Avatar />
-
         <form>
           <input
             value={input}
@@ -28,7 +30,8 @@ function MessageSender() {
           <input
             value={imageUrl}
             onChange={(e) => setImageUrl(e.target.value)}
-            placeholder="image URL {Optional}" />
+            placeholder="image URL {Optional}"
+          />
 
           <button onClick={handleSubmit} type="submit">
             Hidden submit
@@ -37,8 +40,9 @@ function MessageSender() {
       </div>
 
 
+
       <div className="messageSender_bottom">
-        <div className="messagSender_option">
+        m<div className="messagSender_option">
           <VideocamIcon style={{ color: "red" }} />
           <h3>Live Video</h3>
         </div>
