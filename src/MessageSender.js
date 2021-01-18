@@ -8,9 +8,15 @@ import "./MessageSender.css";
 function MessageSender() {
   const [input, setInput] = useState("");
   const [imageUrl, setImageUrl] = useState("")
+
+
   const handleSubmit = e => {
     e.preventDefault();
+
+    setInput("");
+    setImageUrl("");
   };
+
   return (
     <div className="messageSender">
       <div className="messageSender_top">
@@ -19,7 +25,7 @@ function MessageSender() {
         <form>
           <input
             value={input}
-            onChange={(e) => setInput(e.target.value)}
+            onChange={e => setInput(e.target.value)}
             className="messageSender_input"
             placeholder={"What's on your mind?"}
           />

@@ -53,7 +53,7 @@ function Header() {
                     <div className="header_right">
                         <div className="header_Info" >
                             <Avatar />
-                            <h4>sssangha</h4>
+                            <h4>Joseph</h4>
                         </div>
 
                         <IconButton>
