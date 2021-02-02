@@ -77,8 +77,8 @@ align-items: center;
 }
 
 
-.header_Info > .h4 {
-    margin-left: 10px;
+.header_Info > h4 {
+    padding-left: 15px;
 }
 
 .header_right {

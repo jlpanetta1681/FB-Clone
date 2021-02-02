@@ -21,6 +21,8 @@
 
 }
 .post_topInfo > p {
+    font-size: small;
+    color: gray;
     width: 100%;
 } 
 .post_bottom {

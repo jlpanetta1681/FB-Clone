@@ -35,7 +35,7 @@ function Post({ profilePic, image, username, timestamp, message }) {
 
                 <div className="post_option">
                     <ChatBubbleOutlineIcon />
-                    <p>AddCommentRounded</p>
+                    <p>AddComment</p>
                 </div>
 
                 <div className="post_option">
