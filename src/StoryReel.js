@@ -8,7 +8,7 @@ function StoryReel() {
         <div className="storyreel">
 
             <Story
-                image="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/20228473_10209157705291057_8806631916142597116_n.jpg?_nc_cat=105&ccb=2&_nc_sid=a4a2d7&_nc_ohc=NpN7YPI-f64AX9GHSzy&_nc_ht=scontent-ort2-2.xx&oh=c9c5e17d1bfc54981b5f5709d5243e70&oe=601F010A"
+                image="/public/294049_10150367025906737_2060069958_n.jpg"
                 profileSrc="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/71966711_10157508613511737_5590423870214504448_n.jpg?_nc_cat=101&ccb=2&_nc_sid=8bfeb9&_nc_ohc=mFevXEe0JP8AX9kN2Os&_nc_ht=scontent-ort2-2.xx&oh=faf8a065a9be4ce40137c6c8872f13c7&oe=6021161E"
                 title="Joe Panetta"
             />
